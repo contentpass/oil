@@ -1,0 +1,13 @@
+#!/bin/bash -eux
+
+VERSION=${1}
+
+#-h "Cache-Control:public, max-age=60" \
+gsutil \
+    -h "Cache-Control:private" \
+    -m \
+    cp \
+    -z html,js \
+    -a public-read \
+    dist/{*${VERSION}*,index.html,hub.html} \
+    gs://contentpass-dropbox/oil/${VERSION}/

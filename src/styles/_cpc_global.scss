@@ -54,12 +54,9 @@ $slider-padding: 3px;
 
 .as-oil-cpc__middle {
   flex: 1 1 auto;
-  padding: 24px;
-  display: inline-block;
+  padding: 0 24px 24px 24px;
 
   overflow: scroll;
-  max-height: 500px; /* The Fallback */
-  height: 30vh;
   width: 100%;
 
   @include media('<=phone') {
