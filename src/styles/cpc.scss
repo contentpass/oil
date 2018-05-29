@@ -56,7 +56,6 @@
 
   .as-oil__heading,
   .as-oil__intro-txt {
-    margin-left: 200px;
     display: block;
     max-width: 100%;
 
@@ -105,8 +104,8 @@
   display: inline-block;
 
   overflow: scroll;
-  max-height: 500px; /* The Fallback */
-  max-height: 40vh;
+  max-height: 298px;
+  border-bottom: 1px solid #ccc;
 
   @include media('<=phone') {
     padding: 0;
@@ -232,6 +231,7 @@ $slider-padding: 3px;
   left: -($slider-size + 5);
   color: $btn-primary;
   font-weight: 500;
+  font-family: $font-stack-secondary;
 }
 
 .as-oil-cpc__slider {
